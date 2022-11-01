@@ -21,17 +21,11 @@ const userManagementSlice = createSlice({
       const query = action.payload;
       state.query = { ...state.query, ...query };
     },
-    resetUserManagement: (state) => {
-      state = initialState;
-    },
   },
 });
 
-export const {
-  setUserManagementData,
-  setUserManagementQuery,
-  resetUserManagement,
-} = userManagementSlice.actions;
+export const { setUserManagementData, setUserManagementQuery } =
+  userManagementSlice.actions;
 export default userManagementSlice.reducer;
 
 export const selectAllUsers = (state: RootState) => state.userManagement.data;

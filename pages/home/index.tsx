@@ -1,6 +1,6 @@
 import Head from "next/head";
 import SidebarLayout from "@/layouts/SidebarLayout";
-import { Grid, Container, Button } from "@mui/material";
+import { Grid, Container } from "@mui/material";
 import Footer from "@/components/Footer";
 
 function Home() {
